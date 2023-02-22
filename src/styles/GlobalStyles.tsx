@@ -78,3 +78,10 @@ export const StyledSubtitle = styled.h2`
 export const Divider = styled.hr`
 	margin: 5px 0;
 `;
+
+export const Result = styled.span`
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+`;

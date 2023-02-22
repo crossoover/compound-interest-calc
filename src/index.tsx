@@ -2,6 +2,8 @@ import { FC, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import storage from 'local-storage-fallback';
 import { ThemeProvider } from 'styled-components';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { defaultState } from './state/defaultState';
 import { VariablesForm } from './components/VariablesForm';
@@ -47,6 +49,7 @@ const App: FC = () => {
 		<ThemeProvider theme={theme}>
 			<AppContainer>
 				<GlobalStyle />
+				<ToastContainer limit={1} autoClose={3000} />
 				<AppWrapper>
 					<HeaderWrapper>
 						<h1>Position Size Calculator</h1>
